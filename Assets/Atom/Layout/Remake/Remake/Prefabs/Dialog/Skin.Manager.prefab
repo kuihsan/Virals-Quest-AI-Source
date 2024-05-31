@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1461293901382657962
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3934326672097472691}
+  - component: {fileID: 4657062164261678100}
+  m_Layer: 0
+  m_Name: Skin.Manager
+  m_TagString: UISkin
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3934326672097472691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461293901382657962}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 629.09406, y: 220.65451, z: -513.793}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4657062164261678100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461293901382657962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b48fbf9ca0e2c2a488ec49cc7a954e4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 1
+  CurrentSkinIndex: 0
+  SkinCollection:
+  - Name: Default
+    Dialog: {fileID: 21300000, guid: 232fb0fcd4e0c734f9984ed0eb6acda5, type: 3}
+    Header100: {fileID: 21300000, guid: 599c924962b85f440b4c3ee585bd6501, type: 3}
+    Header300: {fileID: 21300000, guid: d62cab02f6cf1a145a7c0a27f1ee034c, type: 3}
+    MainButton: {fileID: 21300000, guid: 861158192c13dec4287c89b20b9c8730, type: 3}
+    SquareButton: {fileID: 21300000, guid: c3667530a3e603b4db92ca1ea40525aa, type: 3}
+    RectButton: {fileID: 21300000, guid: fb4cde8c2125b394ab8bebae35dc0178, type: 3}
+  - Name: Azure
+    Dialog: {fileID: 21300000, guid: 874fb829e5539a34fb32b97179184d0d, type: 3}
+    Header100: {fileID: 21300000, guid: d53bb7ac8ad7296409ae273f15006976, type: 3}
+    Header300: {fileID: 21300000, guid: 07c65b6be57e54c4b9f6b82f6063bd1f, type: 3}
+    MainButton: {fileID: 21300000, guid: 99eb6feb1d7d09f4caf96b05721592c1, type: 3}
+    SquareButton: {fileID: 21300000, guid: a85d8098a8b18b242a9ffa3693cf5369, type: 3}
+    RectButton: {fileID: 21300000, guid: 0e49f37605ed94843b04cac15fc7bee6, type: 3}

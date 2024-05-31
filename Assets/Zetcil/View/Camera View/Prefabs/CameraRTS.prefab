@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1288391476542478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4571214937539732}
+  - component: {fileID: 20336297700182882}
+  - component: {fileID: 81521975990280258}
+  - component: {fileID: 114248943664803696}
+  m_Layer: 0
+  m_Name: CameraRTS
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4571214937539732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288391476542478}
+  m_LocalRotation: {x: -0.1583292, y: -0.061571624, z: 0.009893183, w: -0.9854151}
+  m_LocalPosition: {x: -1.5503889, y: 4.242906, z: -9.451953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &20336297700182882
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288391476542478}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &81521975990280258
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288391476542478}
+  m_Enabled: 1
+--- !u!114 &114248943664803696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288391476542478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c772b116a559e874cbf0f86f634f96d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
+  TargetCamera: {fileID: 20336297700182882}
+  usingKeyboardController: 0
+  KeyboardController:
+    isEnabled: 0
+    ForwardKey: 273
+    LeftKey: 276
+    BackwardKey: 274
+    RightKey: 275
+    UpKey: 280
+    DownKey: 281
+    AltForwardKey: 119
+    AltLeftKey: 97
+    AltBackwardKey: 115
+    AltRightKey: 100
+    AltUpKey: 0
+    AltDownKey: 0
+  usingMouseController: 0
+  MouseController:
+    isEnabled: 0
+    isAutoRotate: 0
+    MouseLookButton: 324
+    MousePanButton: 325
+    MouseScrollButton: 325
+  usingTouchController: 0
+  TouchController:
+    isEnabled: 0
+    TouchStatus: 0
+    PinchStatus: 
+    FingerTouchCount: 0
+    Finger1TouchX: 0
+    Finger1TouchY: 0
+    Finger2TouchX: 0
+    Finger2TouchY: 0
+    FingerDelta: 0
+    prevFingerDelta: 0
+  ResetKey: 286
+  MoveSpeed: 100
+  PitchSpeed: 1
+  YawSpeed: 1
+  RollSpeed: 1
+  ScrollSpeed: 0.1
+  LookSpeed: 4
+  PanSpeed: 1

@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1637996385323252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4147320245254648}
+  - component: {fileID: 20937997160625060}
+  - component: {fileID: 81247719335624532}
+  - component: {fileID: 114758979730201480}
+  m_Layer: 0
+  m_Name: CameraUFO
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4147320245254648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637996385323252}
+  m_LocalRotation: {x: -0.1706029, y: -0.12320973, z: 0.021506952, w: -0.9773697}
+  m_LocalPosition: {x: -2.3227816, y: 1.5884275, z: -6.563818}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &20937997160625060
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637996385323252}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &81247719335624532
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637996385323252}
+  m_Enabled: 1
+--- !u!114 &114758979730201480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637996385323252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc722f35a592917418a73f7fe09d6598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
+  TargetCamera: {fileID: 20937997160625060}
+  usingKeyboardController: 0
+  KeyboardController:
+    isEnabled: 0
+    ForwardKey: 273
+    LeftKey: 276
+    BackwardKey: 274
+    RightKey: 275
+    UpKey: 280
+    DownKey: 281
+    PitchUp: 277
+    PitchDown: 127
+    YawLeft: 278
+    YawRight: 279
+    RollLeft: 278
+    RollRight: 279
+    JumpKey: 0
+    ShiftKey: 0
+    AltForwardKey: 119
+    AltLeftKey: 97
+    AltBackwardKey: 115
+    AltRightKey: 100
+    AltUpKey: 0
+    AltDownKey: 0
+    AltPitchUp: 0
+    AltPitchDown: 0
+    AltYawLeft: 0
+    AltYawRight: 0
+    AltRollLeft: 0
+    AltRollRight: 0
+    AltJumpKey: 0
+    AltShiftKey: 0
+  usingJoystickController: 0
+  JoystickController:
+    isEnabled: 0
+    ForwardKey: 350
+    LeftKey: 351
+    BackwardKey: 352
+    RightKey: 353
+    UpKey: 354
+    DownKey: 355
+    YawLeft: 356
+    YawRight: 357
+    PitchUp: 358
+    PitchDown: 359
+    RollLeft: 360
+    RollRight: 361
+    JumpKey: 0
+    ShiftKey: 0
+  usingMouseController: 0
+  MouseController:
+    isEnabled: 0
+    isAutoRotate: 0
+    MouseLookButton: 324
+    MousePanButton: 325
+    MouseScrollButton: 325
+  usingTouchController: 0
+  TouchController:
+    isEnabled: 0
+    TouchStatus: 0
+    PinchStatus: 
+    FingerTouchCount: 0
+    Finger1TouchX: 0
+    Finger1TouchY: 0
+    Finger2TouchX: 0
+    Finger2TouchY: 0
+    FingerDelta: 0
+    prevFingerDelta: 0
+  ResetKey: 286
+  MoveSpeed: 100
+  ShiftSpeed: 10
+  PitchSpeed: 1
+  YawSpeed: 1
+  RollSpeed: 1
+  ScrollSpeed: 0.1
+  LookSpeed: 4
+  PanSpeed: 1

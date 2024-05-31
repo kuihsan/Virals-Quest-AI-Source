@@ -1,0 +1,394 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1121514608883258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4585153588153994}
+  - component: {fileID: 33730418265781376}
+  - component: {fileID: 23446923095318750}
+  - component: {fileID: 143578808999055646}
+  m_Layer: 0
+  m_Name: CharacterController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4585153588153994
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121514608883258}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 262024645842541130}
+  m_Father: {fileID: 4925675203226854}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33730418265781376
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121514608883258}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &23446923095318750
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121514608883258}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 34c1c20926da2e5488893cbc4a01e4b0, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!143 &143578808999055646
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121514608883258}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1713071741166554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4925675203226854}
+  - component: {fileID: 114936170021688760}
+  - component: {fileID: 114749085424417964}
+  m_Layer: 0
+  m_Name: Player.Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4925675203226854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713071741166554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4585153588153994}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114936170021688760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713071741166554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6b4c698774f2134586def1b543010eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
+  TargetHealth: {fileID: 0}
+  InputType: 0
+  TargetKeyboardController: {fileID: 0}
+  KeyboardStyle: 0
+  MouseStyle: 0
+  VectorStyle: 1
+  TargetVector: {fileID: 0}
+  TargetController: {fileID: 143578808999055646}
+  TargetCamera: {fileID: 0}
+  MainCameraTag: MainCamera
+  PrimaryKeyboardKey:
+    UpKey: 273
+    LeftKey: 276
+    DownKey: 274
+    RightKey: 275
+    JumpKey: 0
+    ShiftKey: 0
+    usingEventSettings: 0
+    KeyboardEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  AltKeyboardKey:
+    UpKey: 119
+    LeftKey: 97
+    DownKey: 115
+    RightKey: 100
+    JumpKey: 0
+    ShiftKey: 0
+    usingEventSettings: 0
+    KeyboardEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  SecondaryKeyboardKey:
+    UpKey: 273
+    LeftKey: 276
+    DownKey: 274
+    RightKey: 275
+    JumpKey: 0
+    ShiftKey: 0
+    usingEventSettings: 0
+    KeyboardEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  AltSecondaryKeyboardKey:
+    UpKey: 273
+    LeftKey: 276
+    DownKey: 274
+    RightKey: 275
+    JumpKey: 0
+    ShiftKey: 0
+    usingEventSettings: 0
+    KeyboardEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  ObjectSelection: 0
+  ObjectName: 
+  ObjectTag: []
+  SelectionStatus: {fileID: 0}
+  ClearSelection: 0
+  ClickSelection: 0
+  ClickTrigger: 0
+  MovementQuadran: 0
+  touchSensitivity: 1
+  moveSensitivity: 1
+  rotateSensitivity: 1
+  usingRotateCameraRight: 0
+  isFlipDirection: 0
+  HorizontalCommand: {fileID: 0}
+  VerticalCommand: {fileID: 0}
+  SpecialCommand: {fileID: 0}
+  MoveSpeed: 2
+  AlterSpeed: 1
+  RotateSpeed: 5
+  TurnSpeed: 0.01
+  followDirection: 0
+  StopDistance: 0.2
+  isAttack: 0
+  isMoving: 0
+  jumpSpeed: 8
+  maxJump: 1
+  gravity: 20
+  currentJump: 0
+  TargetEnemy: {fileID: 0}
+  TargetDistance: 0
+  AttackRange: 0
+  EnemyTag: []
+  usingAutoAttack: 0
+  SearchingRange: 0
+  usingSyncronizeController: 0
+  SyncronizePosition: 0
+  SyncronizeRotation: 0
+  RaycastTag: 
+  RaycastName: 
+  RaycastObject: {fileID: 0}
+  DownStatus: 0
+  CurrentDistance: 0
+  usingVisualObject: 0
+  VisualObject: {fileID: 0}
+  RotationStatus: {x: 0, y: 0, z: 0}
+  usingAdditionalSettings: 0
+  AdditionalSettings: []
+  MovementEnabled: 0
+--- !u!114 &114749085424417964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713071741166554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9845603999c3914a974a3b8d8abfbfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnabled: 0
+  TargetHealth: {fileID: 0}
+  InputType: 0
+  TargetController: {fileID: 143578808999055646}
+  TargetAnimator: {fileID: 0}
+  MousePositionController: {fileID: 0}
+  usingMovingCommandState3D: 0
+  MovingCommandState3D: []
+  isVectorActive: 0
+  TargetVector: {fileID: 0}
+  usingMovingVectorState3D: 0
+  MovingVectorState3D: []
+  usingMovingKeyboardState3D: 0
+  MovingKeyboardState3D: []
+  usingMovingMouseState3D: 0
+  MovingMouseState3D: []
+  usingActionKeyboardState3D: 0
+  ActionKeyboardState3D: []
+  usingActionCommandState3D: 0
+  ActionCommandState3D: []
+  usingActionMouseState3D: 0
+  ActionMouseState3D: []
+  usingActionVectorState3D: 0
+  ActionVectorState3D: []
+  usingShutdownCommandState3D: 0
+  ShutdownCommandState3D:
+    AnimationStateName: 
+    Parameter:
+      Type: 0
+      Name: 
+    TransitionValue: 
+    PositiveValue: 
+    NegativeValue: 
+    ShutdownTestkey: 
+    usingAdditionalSettings: 0
+    AdditionalEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  usingShutdownKeyboardState3D: 0
+  ShutdownKeyboardState3D:
+    AnimationStateName: 
+    Parameter:
+      Type: 0
+      Name: 
+    TransitionValue: 
+    PositiveValue: 
+    NegativeValue: 
+    ShutdownTestkey: 
+    usingAdditionalSettings: 0
+    AdditionalEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  usingShutdownMouseState3D: 0
+  ShutdownMouseState3D:
+    AnimationStateName: 
+    Parameter:
+      Type: 0
+      Name: 
+    TransitionValue: 
+    PositiveValue: 
+    NegativeValue: 
+    ShutdownTestkey: 
+    usingAdditionalSettings: 0
+    AdditionalEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  usingShutdownVectorState3D: 0
+  ShutdownVectorState3D:
+    AnimationStateName: SpriteAttack
+    Parameter:
+      Type: 4
+      Name: Attack
+    TransitionValue: 0
+    PositiveValue: 
+    NegativeValue: 
+    ShutdownTestkey: 
+    usingAdditionalSettings: 0
+    AdditionalEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  usingColliderState: 0
+  ColliderState:
+    DelayCollider: 0
+    enabledBoxCollider: 0
+    BoxColliders: []
+    enabledSphereCollider: 0
+    SphereColliders: []
+    enabledCapsuleCollider: 0
+    CapsuleColliders: []
+--- !u!1 &1544835389509024673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 262024645842541130}
+  m_Layer: 0
+  m_Name: PlayerPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &262024645842541130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544835389509024673}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.049999952, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4585153588153994}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
