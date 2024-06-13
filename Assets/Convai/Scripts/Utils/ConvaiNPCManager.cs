@@ -8,7 +8,7 @@ namespace Convai.Scripts.Utils
     public class ConvaiNPCManager : MonoBehaviour
     {
         [Tooltip("Length of the ray used for detecting NPCs.")] [SerializeField]
-        private float rayLength = 2.0f;
+        private float rayLength = 8.0f;
 
         [Tooltip(
             "Allowable angle from the ray's direction to keep the NPC active, even if not directly hit by the ray.")]
